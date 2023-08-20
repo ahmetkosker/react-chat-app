@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
-body{
-    font-family: 'Square Peg', cursive;
+body {
+  font-family: "Manrope", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Tilt Prism", cursive;
 }
