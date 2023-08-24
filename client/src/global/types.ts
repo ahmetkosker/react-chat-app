@@ -1,4 +1,4 @@
-export {};
+export { };
 
 declare global {
   /**
@@ -20,5 +20,17 @@ declare global {
     email: string;
     password: string;
     gender: string;
+  };
+
+  type RegisterForm = {
+    email: string;
+    username: string;
+    password: string;
+    gender: string;
+  };
+
+  type LoginForm = {
+    email: string;
+    password: string;
   };
 }
