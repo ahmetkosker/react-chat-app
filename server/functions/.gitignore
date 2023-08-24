@@ -7,8 +7,3 @@ typings/
 
 # Node.js dependency directory
 node_modules/
-
-/firebaseConfig.js
-/firebaseConfig
-firebaseConfig.js
-firebaseConfig
