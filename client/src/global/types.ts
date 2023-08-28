@@ -15,13 +15,6 @@ declare global {
     type?: string;
   }
 
-  type UserSubmitForm = {
-    username: string;
-    email: string;
-    password: string;
-    gender: string;
-  };
-
   type RegisterForm = {
     email: string;
     username: string;
