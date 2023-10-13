@@ -14,6 +14,8 @@ import { ToastContainer, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import registerFunc from "../../functions/endPoints/register";
+import { FaGoogle } from "react-icons/fa";
+import signInWithGoogle from "../../functions/endPoints/loginViaGoogle";
 
 const validationSchema = Yup.object().shape({
   username: Yup.string()
@@ -42,7 +44,7 @@ const Register = () => {
   };
 
   return (
-    <main>
+    <main className="h-[500px]">
       <ToastContainer
         position="top-center"
         autoClose={4000}
@@ -129,6 +131,16 @@ const Register = () => {
               Already have an account <span className="underline">Login</span>
             </span>
           </div> */}
+          <div className="w-full mt-7">
+            <Button
+              variant="contained"
+              color="warning"
+              className="w-full h-9"
+              onClick={signInWithGoogle}
+            >
+              <FaGoogle />
+            </Button>
+          </div>
         </form>
       </header>
     </main>

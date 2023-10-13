@@ -8,7 +8,7 @@ const Auth = () => {
   return (
     <main className="w-screen h-screen bg-gradient-to-br from-[#353536] via-[#3C4D5A] to-[#353536]">
       <section className="max-w-5xl h-full mx-auto flex flex-col justify-center items-center gap-y-6">
-        <AuthStatusChanger setVariant={setVariant} />[
+        <AuthStatusChanger variant={variant} setVariant={setVariant} />
         {variant === "SIGNIN" ? <SignIn /> : <Register />}
       </section>
     </main>
